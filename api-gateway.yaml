@@ -1,0 +1,12 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: Auto-webinar API
+paths:
+  /login:
+    post:
+      summary: Logs in an existing user
+      operationId: login
+      x-yc-apigateway-integration:
+        type: cloud_functions
+        function_id: d4ek4m77p6evvjh8pdvo
